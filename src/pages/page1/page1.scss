@@ -1,0 +1,28 @@
+page-page1 {
+  ion-content{
+    &.color_0{
+      background-color: map-get($colors, red);
+    }
+    &.color_1{
+      background-color: map-get($colors, orange);
+    }
+    &.color_2{
+      background-color: map-get($colors, yellow);
+    }
+    &.color_3{
+      background-color: map-get($colors, lightBlue);
+    }
+    &.color_4{
+      background-color: map-get($colors, blue);
+    }
+    &.color_5{
+      background-color: map-get($colors, darkblue);
+    }
+  }
+  .frase{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: map-get($colors, light);
+    font-family: lato;
+  }
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar (click)="toggleStatus('start')">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <div id="button_food" class="halfPageButton" [class.collapsed]="status=='food_expanded'" [hidden]="status=='activity_expanded'" (click)="toggleStatus('food_expanded')">
+    <h3 class="title">alimentazione</h3>
+  </div>
+
+  <div id="button_activities" class="halfPageButton" [class.collapsed]="status=='activity_expanded'" [hidden]="status=='food_expanded'" (click)="toggleStatus('activity_expanded')">
+    <h3 class="title">attività</h3>
+  </div>
+
+  <div id="food_tips" class="tipslist" padding [hidden]="status!='food_expanded'">
+    <div *ngFor='let tip of foodTips' class="tip">
+      <h3 class="title">{{ tip.name }}</h3>
+      <p class="description">{{ tip.sentence }}</p>
+      <ion-icon name="arrow-forward" [navPush]="singleTipPage" [navParams]="tip"></ion-icon>
+    </div>
+  </div>
+
+  <div id="activity_tips" class="tipslist" padding [hidden]="status!='activity_expanded'">
+    <div *ngFor='let tip of activityTips' class="tip">
+      <h3 class="title">{{ tip.name }}</h3>
+      <p class="description">{{ tip.sentence }}</p>
+      <ion-icon name="arrow-forward" [navPush]="singleTipPage" [navParams]="tip"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>
