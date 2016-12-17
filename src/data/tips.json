@@ -1,0 +1,29 @@
+{
+  "food": [{
+    "name": "limoni",
+    "sentence": "il limone ti fa bene, ma tanto tanto bene"
+  }, {
+    "name": "limoni",
+    "sentence": "il limone ti fa bene, ma tanto tanto bene"
+  }],
+  "activities": [{
+    "name": "yoga",
+    "sentence": "fai lo yoga che è bello"
+  }, {
+    "name": "yoga2",
+    "sentence": "fai lo yoga che è bello"
+  }, {
+    "name": "yoga3",
+    "sentence": "fai lo yoga che è bello"
+  }, {
+    "name": "yoga3",
+    "sentence": "fai lo yoga che è bello"
+  }, {
+    "name": "yoga3",
+    "sentence": "fai lo yoga che è bello"
+  }, {
+    "name": "saluto al sole",
+    "sentence": "ma puoi pure salutare tua sorella se preferisci"
+  }]
+
+}
